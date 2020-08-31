@@ -8,6 +8,7 @@ import (
 	"net/http"
 	"os"
 	"time"
+	"tool/test"
 )
 
 var db *gorm.DB
@@ -95,8 +96,10 @@ func GetDB() *gorm.DB {
 
 func main() {
 	app := gin.Default()
-	GetDB()
-	CloseDB()
+	//GetDB()
+	//CloseDB()
+
+	test.Test()
 	app.GET("/test", func(context *gin.Context) {
 		context.String(http.StatusOK, "dadad")
 	})

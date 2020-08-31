@@ -2,7 +2,7 @@ package test
 
 import "fmt"
 
-func test() {
+func Test() {
 	fmt.Println("this is gitee")
 	fmt.Println("this is gitee")
 	fmt.Println("this is gitee")
