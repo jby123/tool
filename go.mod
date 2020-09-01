@@ -1,4 +1,4 @@
-module tool
+module github.com/jby123/tool
 
 go 1.15
 
